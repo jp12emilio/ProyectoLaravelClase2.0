@@ -7,7 +7,6 @@ use Illuminate\Database\Migrations\Migration;
 class CreateUsersTable extends Migration
 {
 
-	protected $primaryKey='id';
     /**
      * Run the migrations.
      *
