@@ -13,7 +13,7 @@ class Registers extends Migration
      */
      public function up()
     {
-        Schema::create('register', function (Blueprint $table) {
+        Schema::create('registers', function (Blueprint $table) {
             $table->unsignedInteger('id_order');
             $table->unsignedInteger('id_game');
             $table->unsignedInteger('id');
@@ -33,6 +33,6 @@ class Registers extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('register');
+        Schema::dropIfExists('registers');
     }
 }
