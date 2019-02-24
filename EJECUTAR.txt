@@ -1,1 +1,4 @@
+Ejecutar el comando dentro del directorio del Proyecto, no de Vagrant.
+Si el proyecto se llama "SteamBalbe", lo tendreis que ejecutar dentro de SteamBalbe.
+
 composer require gloudemans/shoppingcart
