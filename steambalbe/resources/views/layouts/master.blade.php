@@ -7,12 +7,12 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="./../../css/estilo.css">
-    <title>SteamBalbe</title>
+    <link rel="stylesheet" type="text/css" href="./../../css/style.css">
+    <title>Videoclub</title>
 </head>
 <body>
 @include('partials.navbar')
-<div class="container-include" style="padding: 0;">
+<div class="container-include">
     @yield('content')
 </div>
 @include('partials.footer')

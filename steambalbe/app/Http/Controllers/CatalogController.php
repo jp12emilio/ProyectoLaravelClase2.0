@@ -30,7 +30,7 @@ class CatalogController extends Controller {
 		$game->description = $request->input('description');
 		$game->save();
 		
-		return redirect()->action('CatalogController@getIndex'.$id);
+		return redirect()->action('CatalogController@getIndex');
 	}
 	public function putEdit(Request $request, $id) {
 		$game = Games::findOrFail($id);
@@ -46,7 +46,7 @@ class CatalogController extends Controller {
 		$game->description = $request->input('description');
 		$game->save();
 		
-		return view('catalog.show')->with('arrayJuego', Games::findOrFail($id));
+		return view('catalog.show')->with('arrayJuegos', Games::findOrFail($id));
 	}
 }
 ?>

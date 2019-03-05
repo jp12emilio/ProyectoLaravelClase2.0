@@ -6,6 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class Orders extends Migration
 {
+	protected $primaryKey='id_order';
     /**
      * Run the migrations.
      *

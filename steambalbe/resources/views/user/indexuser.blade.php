@@ -11,16 +11,19 @@
 
 <div class="container fondo">
     <div class="row">
+        <div class="col-12 text-center"><h3>Usuarios</h3></div>
+        <div class="col-12 text-right">
+            <a class="btn btn-warning mr-5" href="{{ url('/user/create' ) }}">+ Insertar Usuario</a>
+        </div>
         @foreach( $usuarios as $key => $user )
             <div class="col-xs-6 col-sm-4 col-md-3 text-center">
-                <a href="{{ url('/user/show/' . $user->id ) }}">
-                    <h4 style="min-height:45px;margin:5px 0 10px 0">
+                    <h4 class="h4Index">
                         {{$user->user}}
                     </h4>
-                </a>
-                <h6 style="min-height:45px;margin:5px 0 10px 0">
+                <h6 class="h6Index">
                     <b>{{$user->address}}</b>
                 </h6>
+                <a class="btn btn-warning" href="{{ url('/user/edit/' . $user->id ) }}">Editar usuario</a>
             </div>
         @endforeach
     </div>

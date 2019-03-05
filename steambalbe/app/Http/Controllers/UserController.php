@@ -46,7 +46,7 @@ class UserController extends Controller {
 		$user->admin = $request->input('admin');
 		$user->user = $request->input('user');
 		$user->save();
-		return view('user.showuser')->with('usuario', User::findOrFail($id));
+		return view('user.edituser')->with('usuario', User::findOrFail($id));
 	}
 }
 

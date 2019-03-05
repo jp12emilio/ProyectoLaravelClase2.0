@@ -2,14 +2,14 @@
 use Illuminate\Support\Facades\Input;
 Auth::routes();
 
-Route::group(['middleware' => 'auth'], function () {
-    
+        Route::get('/catalog', 'CatalogController@getIndex');
+        Route::get('/catalog/show/{id}', 'CatalogController@getShow');
+Route::get('/contacto', function (){
+    return view('contacto');
 });
 
 Route::group(['middleware' => 'admin'], function () {
     Route::get('/admin', 'AdminController@index');
-	Route::get('/catalog', 'CatalogController@getIndex');
-    Route::get('/catalog/show/{id}', 'CatalogController@getShow');
 });
 
 
@@ -39,5 +39,7 @@ Route::group(['middleware' => 'admin'], function () {
     return redirect($route);
     });
     Route::get("searchForm/search/{search}", "HomeController@search");
-
-
+Route::resource('cart', 'CartController');
+Route::post('proceedToCheckout/{id}', 'CartController@proceedToCheckout');
+Route::delete('emptyCart', 'CartController@emptyCart');
+Route::get('paypal', 'CartController@paypal');

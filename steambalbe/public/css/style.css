@@ -1,0 +1,83 @@
+body {
+    background-image: url(./../img/fondo.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+.fondo {
+    background-color: white !important;
+    height: 735px;
+}
+.fondo1 {
+    background-color: white !important;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.fondo2 {
+    background-color: white !important;
+}
+.clear{
+    margin-top: 7px;
+}
+#footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+.color1 {
+    border-top:1px solid orange;
+}
+.imagein{
+    height:60%;
+    width:85%;
+}
+.imagesh{
+    height:50%;
+    width:100%;
+}
+.bordernav {
+    border-bottom: 2px solid orange;
+    padding: 0;
+}
+.titulojuego {
+    margin:5px 0 10px 0;
+    color: orangered;
+}
+.nav-link {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+.contactcolor {
+    background-color: white !important;
+}
+.button{
+    padding:8px 100px;
+    margin-top:25px;
+}
+.divSearch{
+    padding: 20px;
+}
+.h4Index {
+    min-height:45px;
+    margin:5px 0 10px 0;
+}
+.h6Index {
+    min-height:45px;
+    margin:5px 0 10px 0;
+}
+.oferta {
+    margin-left: 4.3%;
+}
+.clearfoot{
+    margin-top: 3%;
+}
+.cards {
+    margin-top: 100px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 100px;
+}
+.juegos {
+    padding: 0;
+    height: 400px;
+}
